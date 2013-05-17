@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>Suki:custom_copyright_single</id>
+	<name>Copyright and Footer Links</name>
+	<version>3.2</version>
+	<type>modification</type>
+
+<install for="2.0 - 2.0.99">
+		<readme parsebbc="true">readme.txt</readme>
+		<code>install.php</code>
+		<require-file name="CustomCopy.php" destination="$sourcedir">The file that handles everything</require-file>
+		<require-dir name="languages" destination="$themedir">The folder with the translations</require-dir>
+		<redirect url="index.php?action=admin;area=modsettings;sa=general" timeout="3000">redirect.txt</redirect>
+	</install>
+
+	<uninstall for="2.0 - 2.0.99">
+		<code>remove.php</code>
+		<remove-file name="$sourcedir/CustomCopy.php" />
+		<remove-file name="$languagedir/CustomCopy.english.php" />
+		<remove-file name="$languagedir/CustomCopy.spanish_es-utf8.php" />
+		<remove-file name="$languagedir/CustomCopy.spanish_es.php" />
+		<remove-file name="$languagedir/CustomCopy.spanish_latin.php" />
+		<remove-file name="$languagedir/CustomCopy.spanish_latin-utf8.php" />
+	</uninstall>
+</package-info>
