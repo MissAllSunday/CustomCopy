@@ -32,7 +32,7 @@ function CFL_Buffer($buffer)
 		'/(<li class="copyright">.+?)+(<\/li>)/i',
 
 		function($match) use ($customCopy) {
-			return ($match[0] .  ' ' . $customCopy);
+			return ($match[1] .  ' ' . $customCopy);
 			},
 		$buffer
 	);
