@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * @license http://www.mozilla.org/MPL/ MPL 2.0
  */

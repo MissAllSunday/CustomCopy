@@ -3,11 +3,12 @@
 <package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
 	<id>Suki:custom_copyright_single</id>
 	<name>Copyright and Footer Links</name>
-	<version>4.0</version>
+	<version>4.0.1</version>
 	<type>modification</type>
 
 <install for="2.1 - 2.1.99">
 		<readme parsebbc="true">readme.txt</readme>
+		<code>installCheck.php</code>
 		<code>install.php</code>
 		<require-file name="CustomCopy.php" destination="$sourcedir">The file that handles everything</require-file>
 		<require-dir name="languages" destination="$themedir">The folder with the translations</require-dir>

@@ -1,7 +1,4 @@
 <?php
-/**
- * @license http://www.mozilla.org/MPL/ MPL 2.0
- */
 
 if (!defined('SMF'))
 	die('No direct access...');
@@ -14,7 +11,7 @@ function CFL_Admin(&$config_vars)
 	global $txt;
 
 	$config_vars[] = '';
-	$config_vars[] = array('large_text', 'CFL_foot_links', 'subtext' => $txt['CFL_foot_links_sub']);
+	$config_vars[] = ['large_text', 'CFL_foot_links', 'subtext' => $txt['CFL_foot_links_sub']];
 }
 
 /* Buffer time */
