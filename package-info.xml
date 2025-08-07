@@ -7,7 +7,7 @@
 	<type>modification</type>
 
 <install for="2.1 - 2.1.99">
-		<readme parsebbc="true">readme.txt</readme>
+		<readme parsebbc="true">readme.md</readme>
 		<code>installCheck.php</code>
 		<code>install.php</code>
 		<require-file name="CustomCopy.php" destination="$sourcedir">The file that handles everything</require-file>
